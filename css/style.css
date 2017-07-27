@@ -1,0 +1,171 @@
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+div {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    font-size: 16px;
+    position: absolute;
+    margin: 0;
+    padding: 2px 0;
+    width: 100%;
+    background-color: #000;
+    opacity: 0;
+    top: 0;
+    transition: .5s ease;
+}
+
+.container {
+    padding: 1%;
+}
+
+p,
+form {
+    margin: 1%;
+    text-align: center;
+    font-size: 17px;
+}
+
+input {
+    /*padding: 3px;*/
+    width: 72px;
+    border-radius: 9px;
+}
+
+input[type="radio"] {
+    padding: 0;
+    width: 20px;
+    margin: 10px 3px 20px 3px;;
+    -webkit-appearance: radio;
+    box-sizing: border-box;
+}
+
+
+.row {
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+
+.col {
+    width: 9%;
+    margin: 1%;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+
+h3 {
+    text-align: center;
+    margin: 15px 0;
+}
+
+img {
+    width: 100%;
+}
+
+.display-area {
+    margin: 2% 10%;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #fff;
+    width: 80%;
+    display: block;
+    /*vertical-align: top;*/
+    text-align: center;
+}
+
+.display-area h3 {
+    border: 1px solid #fff;
+    padding: 5px;
+}
+
+.display-area .pup_name {
+    color: #000;
+    background-color: #fff;
+}
+
+.pup_name,
+.pup_clicks {
+    display: inline-block;
+    width: 45%;
+    margin: 2% 1%;
+    padding: 5px 0;
+    border-radius: 10px;
+}
+
+.cat-list img {
+    height: 80px;
+}
+
+.cat-list img:hover,
+.display-area img:hover,
+.sec_admin h4:hover,
+.admin_save:hover {
+    cursor: pointer;
+}
+
+.cat-list :hover .col_title {
+    opacity: 0.8;
+}
+
+.sec_admin h4,
+.sec_view {
+    display: none;
+}
+
+.sec_admin h4{
+    text-align: center;
+    padding: 10px 0;
+    width: 80%;
+    margin: 0 auto;
+    background: #fff;
+    color: #000;
+    border-radius: 15px;
+}
+
+.sec_view {
+    text-align: center;
+    padding: 20px;
+    margin: 2% 10%;
+    border: 1px solid #fff;
+}
+
+.sec_view .admin_input {
+    margin-bottom: 10px;
+    width: 150px;
+}
+
+.admin_save {
+    border-radius: 15px;
+}
+
+/*media queries work only if meta tag for device width is added to the index.html*/
+@media screen and (max-width: 786px) {
+    p,
+    form {
+        font-size: 20px;
+    }
+    .col {
+        width: 30%;
+    }
+    .display-area .pup_name,
+    .display-area .pup_clicks {
+        width: 90%;
+        margin-top: 1%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .col {
+        width: 48%;
+    }
+}

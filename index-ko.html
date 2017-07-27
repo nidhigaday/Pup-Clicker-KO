@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>Pup Clicker</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Pup Clicker</h1>
+        <p>How many pups you want to see?</p>
+        <form id="catCount" data-bind="submit: submitNo">
+            <input id="catsValue" type="number" data-bind="value: numPups"/>
+            <button type="submit">Get Puppies</button>
+        </form>
+        <div class="row cat-list" data-bind="foreach: catList">
+            <div class="col">
+                <img src="" data-bind="click: $parent.clickedCat, attr: {src: image}">
+                <h2 class="col_title" data-bind="text: name"></h2>
+            </div>
+        </div>
+        <hr>
+        <div class="display-area" data-bind="with: currentCat">
+            <div id="pup_details" class="pup_details">
+                <h3 class="pup_name" data-bind="text: name"></h3>
+                <h3 class="pup_clicks">Clicks: <span data-bind="text: clickCount"></span></h3>
+            </div>
+            <img id="large-image" src="" style="border:0" data-bind="click: $root.incrementCounter, attr: {src: image}" />
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/lib/knockout-3.2.0.js"></script>
+    <script src="js/ko-clicker.js"></script>
+</body>
+
+</html>
