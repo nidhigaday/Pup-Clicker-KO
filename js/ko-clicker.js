@@ -72,6 +72,7 @@ var ViewModel = function() {
     self.numPups = ko.observable();
 
     self.submitNo = function() {
+        self.catList([]);
         var n = self.numPups();
         for(var i = 0; i < n; i++) {
             self.catList.push(new Cat(allCats[i]));
