@@ -1,4 +1,4 @@
-# Udacity Project (Cat-Clicker) Pup-Clicker-with-KO
+# Udacity Project - (Cat-Clicker) Pup-Clicker-with-KO
 <br>KnockoutJS, MVC, Object Orient Javascript
 
 The purpose of this project is to learn and implement MVVM using KnockoutJS framework.
@@ -9,6 +9,10 @@ The purpose of this project is to learn and implement MVVM using KnockoutJS fram
 <br>- Save data in local storage until session ends or browser tab is closed
 <br>- Understand data-binding
 <br>- Update name and no. of clicks of corresponding pup in the DOM and local storage
+
+<strong>Functionality:</strong>
+<br>- Select a number and submit
+<br>- Everytime 'Get Puppies' button is clicked, the data associated to existing puppies retains and new pupies are added
 
 <strong>Resources used:</strong>
 <br><a target="_blank" href="http://knockoutjs.com/documentation/">KnockoutJS Documentation</a>
