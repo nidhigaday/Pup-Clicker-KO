@@ -13,19 +13,19 @@
 <body>
     <div class="container">
         <h1>Pup Clicker</h1>
-        <p>How many pups you want to see?</p>
+        <p>How many pups you want to see? Select a number</p>
         <form id="catCount" data-bind="submit: submitNo">
             <input id="catsValue" type="number" data-bind="value: numPups"/>
             <button type="submit">Get Puppies</button>
         </form>
-        <div class="row cat-list" data-bind="foreach: catList">
+        <div class="row cat-list" data-bind="foreach: pupList">
             <div class="col">
-                <img src="" data-bind="click: $parent.clickedCat, attr: {src: image}">
+                <img src="" data-bind="click: $parent.clickedPup, attr: {src: image}">
                 <h2 class="col_title" data-bind="text: name"></h2>
             </div>
         </div>
         <hr>
-        <div class="display-area" data-bind="with: currentCat">
+        <div class="display-area" data-bind="with: currentPup">
             <div id="pup_details" class="pup_details">
                 <h3 class="pup_name" data-bind="text: name"></h3>
                 <h3 class="pup_clicks">Clicks: <span data-bind="text: clickCount"></span></h3>
@@ -33,9 +33,9 @@
             <img id="large-image" src="" style="border:0" data-bind="click: $root.incrementCounter, attr: {src: image}" />
         </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
     <script src="js/lib/knockout-3.2.0.js"></script>
-    <script src="js/ko-clicker.js"></script>
+    <script async src="js/ko-clicker.js"></script>
 </body>
 
 </html>
